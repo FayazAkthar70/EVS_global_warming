@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+.body{
+    overflow-x:hidden;
+    max-width: 100%;
+}
+#water-flow{
+     
+    width: 100%;
+    
+}
+
+.container-circle{
+position: absolute;
+bottom: 25%;
+left: 20%;
+
+    
+}
+
+
+.circle{
+    margin: 0 10px 20px;
+    width: 15vw;
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    display: inline-block;
+    border: 5px solid rgba(255, 255, 255, 0.534);
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+ h4.hover-dissapear-1,h4.hover-dissapear-2,h4.hover-dissapear-3,h4.hover-dissapear-4{
+    font-size: 1.5em;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 0.87);
+    font-family: 'Open Sans', sans-serif;
+
+}
+h4.hover-dissapear-1::after{
+    content: 'Evidence';
+}   
+h4.hover-dissapear-1:hover:after{
+    content: 'How do we know climate change is real';
+    font-size: 80%;
+    
+}
+h4.hover-dissapear-2::after{
+    content: 'Causes';
+}   
+h4.hover-dissapear-2:hover:after{
+    content: 'Why is climate change happening';
+    font-size: 80%;
+}
+h4.hover-dissapear-3::after{
+
+    content: 'Effects';
+}   
+h4.hover-dissapear-3:hover:after{
+    font-size: 80%;
+
+    content: 'What are the effects of climate change';
+}
+h4.hover-dissapear-4::after{
+    content: 'Solutions';
+}   
+h4.hover-dissapear-4:hover:after{
+    font-size: 70%;
+    padding: 10px;
+    content: 'What is being done to solve climate change';
+}
+
+
+#heading_1{
+    position: absolute;
+    bottom: 60%;
+    left: 5%;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0px;
+    font-size: 300%;
+    font-weight: bolder;
+
+    color: rgba(255, 255, 255, 0.87);
+    font-family: 'Open Sans', sans-serif;
+}
+@media only screen and (max-width: 600px){
+    #heading_1{
+        bottom: 75%;
+        font-size: 200%;
+    }
+}
+
+.circle-text{
+    display: flex;
+    height: 100%;
+    margin: auto;
+    align-items:center;
+    justify-content:center;
+}
+
+.image-evidence{
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    width: 40%;
+    
+}
+.button_global_warming{
+    margin-top: 20% ; 
+    margin-left: 100%; 
+}
+@media only screen and (max-width: 600px){
+    .button_global_warming{ 
+        margin-left: 0px; 
+    }
+    .image-evidence{
+        visibility: hidden;
+        position: absolute;
+    }
+}
