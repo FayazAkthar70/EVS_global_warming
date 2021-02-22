@@ -11,16 +11,16 @@
 }
 
 .container-circle{
+    width: 100vw;
 position: absolute;
 bottom: 25%;
-left: 20%;
-
-    
+display: flex;
+justify-content: center;
 }
 
 
 .circle{
-    margin: 0 10px 20px;
+    margin: 0 10px 20px 10px;
     width: 15vw;
     height: 15vw;
     display: flex;
@@ -77,7 +77,7 @@ h4.hover-dissapear-4:hover:after{
     position: absolute;
     bottom: 60%;
     left: 5%;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     letter-spacing: 0px;
     font-size: 300%;
@@ -88,6 +88,7 @@ h4.hover-dissapear-4:hover:after{
 }
 @media only screen and (max-width: 600px){
     #heading_1{
+        left: 0%;
         bottom: 75%;
         font-size: 200%;
     }
@@ -102,13 +103,24 @@ h4.hover-dissapear-4:hover:after{
 }
 
 .image-evidence{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    display: inline-block;
+    margin-left: 10px;
     border-radius: 4px;
     display: inline-block;
     position: relative;
     overflow: hidden;
-    height: 250px;
-    width: 40%;
+    width: 50%;
+    height: auto;
     
+}
+@media only screen and (max-width: 1000px){
+    .image-evidence{
+        visibility: hidden;
+        position: absolute;
+    }
 }
 .button_global_warming{
     margin-top: 20% ; 
@@ -118,8 +130,14 @@ h4.hover-dissapear-4:hover:after{
     .button_global_warming{ 
         margin-left: 0px; 
     }
-    .image-evidence{
-        visibility: hidden;
-        position: absolute;
+
+}
+.button-evidence{
+    position: relative;
+    left: 700px;
+}
+@media only screen and (max-width: 600px){
+    .button-evidence{
+        margin-left: 0px;
     }
 }
